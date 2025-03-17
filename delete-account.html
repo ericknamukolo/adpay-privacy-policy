@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADPay - Account Deletion</title>
+    <style>
+        :root {
+            --primary: #7E1891;
+            --secondary: #FFC107;
+            --primary-light: #9a39ad;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --bg-light: #f8f8f8;
+            --bg-white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 30px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            background-color: var(--secondary);
+            color: var(--primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .page-title {
+            font-size: 20px;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .content-card {
+            background: var(--bg-white);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            font-size: 24px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+        }
+        
+        .step-card {
+            background-color: var(--bg-white);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex-grow: 1;
+        }
+        
+        .highlight-box {
+            background-color: rgba(255, 193, 7, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            margin: 25px 0;
+        }
+        
+        .contact-section {
+            background-color: rgba(126, 24, 145, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .email-link {
+            color: var(--primary);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .thank-you {
+            font-style: italic;
+            text-align: center;
+            margin-top: 30px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">AD</div>
+                    ADPay App
+                </div>
+                <div class="page-title">Account Deletion</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-card">
+            <h1>Account Deletion</h1>
+            <p>Thank you for using our app! We strive to provide the best experience for our users. If you wish to delete your account, please follow the steps below:</p>
+
+            <h2>Steps to Request Account Deletion</h2>
+            
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-content">Open the ADPay App on your device.</div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-content">Navigate to the "Settings" screen.</div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-content">Click on the "Delete Account" option.</div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-content">Follow the on-screen instructions to confirm the account deletion.</div>
+            </div>
+
+            <div class="highlight-box">
+                <h2>Data Deletion Policy</h2>
+                <p>We take data privacy seriously and follow the below policy for account deletion:</p>
+                <ul>
+                    <li>All personally identifiable information (PII) associated with your account will be permanently deleted.</li>
+                    <li>Your app usage history and preferences will be deleted.</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or concerns regarding your account deletion or data privacy, please don't hesitate to contact us at <a href="mailto:erickmndev@gmail.com" class="email-link">erickmndev@gmail.com</a></p>
+            </div>
+
+            <p class="thank-you">Thank you for being a part of our community.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>ADPay App &copy; 2025 - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
